@@ -29,7 +29,7 @@
           <h4 class="modal-title">Nueva tarea</h4>
         </div>
         <div class="modal-body">
-          <form action="/tarea/new" method="post">
+          <form action="/tarea/new" method="post" id="FORMID">
             <div class="form-group">
               <input type="text" class="form-control" name="task">
             </div>
@@ -37,6 +37,7 @@
           </form>
         </div>
         <div class="modal-footer">
+          <button type="submit" form="FORMID" value="Submit" class="btn btn-dark btn-lg btn-block">Nueva tarea</button>
         </div>
       </div>
 
