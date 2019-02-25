@@ -1,0 +1,74 @@
+body{
+    background: #303030;
+    color: black; 
+}
+
+div .title-box-box{     
+    margin-bottom:100px;
+}
+
+.panel-heading{
+
+  height:40px;
+}
+
+.panel-heading span
+{
+    margin-top: -9px;
+    font-size: 15px;
+    margin-right: -12px;
+    margin-left: 15px;
+}
+
+.clickable {
+    background: rgba(0, 0, 0, 0.15);
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.clickable_pus {
+    background: rgba(255, 255, 255, 0.753);
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.update_form, .create_form {
+	background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
+.caja{
+    border-radius: 10px;
+    position:relative;
+    background-color:#40597e;
+    max-width:600px;
+    padding: 10px 20px;
+    left:3%;
+    right:5%;
+    top:10px;
+}
+
+.caja_done{
+    border-radius: 10px;
+    position:relative;
+    background-color:#30853c;
+    max-width:600px;
+    padding: 10px 20px;
+    right:3%;
+    left:5%;
+    top:10px;
+}
+
+.perro{
+    height:auto; 
+    overflow-wrap: break-word;
+}

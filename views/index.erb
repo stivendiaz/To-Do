@@ -1,0 +1,78 @@
+
+<div class="panel caja col-sm-6 todo" style="height:auto;">
+    <div class="title-box-box" style="margin-bottom:50px">
+    <h1>ToDo
+     <span class="pull-right clickable_pus" data-toggle="modal" data-target="#myModal" data-effect="fadeOut"><i class="glyphicon glyphicon-plus"></i></span>
+    </h1>
+    </div>
+
+    <% @tareas.each do |tarea| %>
+    <% if tarea["done"] == false %>
+
+    <div class="perro col-md-6 col-sm-12 col-xs-12 ">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title"> </h3>
+
+                <form class"todone">
+                    <input type="hidden" name="id" value="<%= tarea["id"] %>">
+                    <button type="submit" class="update_form pull-right"><span class="clickable pull-right" data-effect="remove"><i
+                    class="fa fa-times"></i></span></button>
+                </form>
+                <form>
+                    <input type="hidden" name="id" value="<%= tarea["id"] %>">
+                    <button type="submit" class="create_form pull-right"><span class="clickable pull-right" data-effect="remove"><i
+                    class="glyphicon glyphicon-ok"></i></span></button>
+                </form>
+
+
+
+            </div>
+            <div class="panel-body">
+                <h3>
+                    <%= tarea["title"] %>
+                </h3>
+                
+            </div>
+        </div>
+    </div>
+
+    <% end  %>
+    <% end  %>
+
+</div>
+
+<div class="panel caja_done col-sm-6 done" style="height:auto;">
+    <div class="title-box-box" style="margin-bottom:50px">
+    <h1>Done
+    </h1>
+    </div> 
+
+    <% @tareas.each do |tarea| %>
+    <% if tarea["done"] == true %>
+    <div class="perro col-md-6 col-sm-12 col-xs-12">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title"> </h3>
+
+                <form class"todone">
+                    <input type="hidden" name="id" value="<%= tarea["id"] %>">
+                    <button type="submit" class="update_form pull-right"><span class="clickable pull-right" data-effect="remove"><i
+                    class="fa fa-times"></i></span></button>
+                </form>
+
+
+
+            </div>
+            <div class="panel-body">
+                <h3>
+                    <%= tarea["title"] %>
+                </h3>
+                
+            </div>
+        </div>
+    </div>
+
+    <% end  %>
+    <% end  %>
+</div>
